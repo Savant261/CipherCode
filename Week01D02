@@ -1,0 +1,127 @@
+1. Finding the largest number
+
+#include <iostream>
+using namespace std;
+
+int main()
+{
+   int a, b, c;
+   cout << "Enter the first number: ";
+   cin >> a;
+   cout << "Enter the second number: ";
+   cin >> b;
+   cout << "Enter the third number: ";
+   cin >> c;
+
+   if(a > b)
+    {
+       if(a > c)
+       {
+           cout << "The largest number is: " << a;
+       }
+    }
+    else
+    {
+        if(b < c)
+           {
+               cout << "The largest number is: " << c;
+           }
+           else
+           {
+               cout << "The largest number is: " << b;
+           }
+       }
+    return 0;
+}
+
+2. Comparing grades
+
+#include <iostream>
+using namespace std;
+
+int main()
+{
+   int g;
+   cout << "Enter the score: ";
+   cin >> g;
+   if(g > 89 && g < 101)
+   {
+       cout << "Grade: A";
+   }
+   else if(g > 79 && g <90)
+   {
+       cout << "Grade: B";
+   }
+   else if (g > 69 && g < 80)
+   {
+       cout << "Grade: C";
+   }
+   else if(g > 59 && g < 70)
+   {
+       cout << "Grade: D";
+   }
+   else if(g < 60)
+   {
+       cout << "Grade: F";
+   }
+   else
+   {
+       cout << "Wrong input";
+   }
+   return 0;
+}
+
+3. Finding month by using switch case
+
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int month;
+    cout << "Enter a number: ";
+    cin >> month;
+    switch(month)
+    {
+    case 1:
+        cout << "The month is: January";
+        break;
+    case 2:
+        cout << "The month is: February";
+        break;
+    case 3:
+        cout << "The month is: March";
+        break;
+    case 4:
+        cout << "The month is: April";
+        break;
+    case 5:
+        cout << "The month is: May";
+        break;
+    case 6:
+        cout << "The month is: June";
+        break;
+    case 7:
+        cout << "The month is: July";
+        break;
+    case 8:
+        cout << "The month is: August";
+        break;
+    case 9:
+        cout << "The month is: September";
+        break;
+    case 10:
+        cout << "The month is: October";
+        break;
+    case 11:
+        cout << "The month is: November";
+        break;
+    case 12:
+        cout << "The month is: December";
+        break;
+    default:
+        cout << "Invalid";
+
+    }
+    return 0;
+}
