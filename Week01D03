@@ -1,0 +1,52 @@
+1. Finding sum of first n natural numbers
+
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int n, sum = 0;
+    cout << "Enter a number: ";
+    cin >> n;
+    for(int i = 0; i <= n; i++)
+    {
+        sum += i;
+    }
+    cout << "The sum of the first " << n << " natural numbers is: " << sum;
+    return 0;
+}
+
+2. Finding factorial
+
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int n, fact = 1;
+    cout << "Enter a number: ";
+    cin >> n;
+    for(int i = 1; i <= n; i++)
+    {
+        fact *= i;
+    }
+    cout << "The factorial of " << n <<  " is: " << fact;
+    return 0;
+}
+
+3. Printing multiplication table
+
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int n;
+    cout << "Enter a number: ";
+    cin >> n;
+    for(int i = 1; i < 11; i++)
+    {
+        cout << n << " x " << i << " = " << n*i << endl;
+    }
+    return 0;
+}
