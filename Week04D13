@@ -1,0 +1,13 @@
+1.
+
+#include <iostream>
+
+using namespace std;
+
+int main() {
+    int* ptr = new int; //dynamic integer variable using new keyword
+    *ptr = 42;
+    cout << "The value of the dynamic variable: " << *ptr << endl;
+    delete ptr;
+    return 0;
+}
