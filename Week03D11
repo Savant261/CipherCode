@@ -1,0 +1,65 @@
+1.
+
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int n;
+    cout << "Enter the size of array: ";
+    cin >> n;
+    cout << "Array: ";
+    int arr[n];
+    for(int i = 0; i < n; i++)
+    {
+        cin >> arr[i];
+    }
+    int t, flag = 0;
+    cout << "Target: ";
+    cin >> t;
+    for(int i = 0; i < n; i++)
+    {
+        if(arr[i] == t)
+        {
+            flag = 1;
+        }
+    }
+
+    if(flag)
+        cout << "YES";
+    else
+        cout << "NO";
+    return 0;
+}
+
+2.
+
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int n;
+    cout << "Enter the size of array: ";
+    cin >> n;
+    cout << "Array: ";
+    int arr[n];
+    for(int i = 0; i < n; i++)
+    {
+        cin >> arr[i];
+    }
+    int t, index = -1;
+    cout << "Target: ";
+    cin >> t;
+    for(int i = 0; i < n; i++)
+    {
+        if(arr[i] == t)
+        {
+            index = i + 1;
+        }
+    }
+
+    cout << "Output: " << index;
+
+    return 0;
+}
