@@ -1,0 +1,66 @@
+1. 
+
+#include <iostream>
+
+using namespace std;
+
+int main() {
+
+    int r,c;
+    cout << "Enter the size of the 2D array: ";
+    cin >> r >> c;
+    int arr[r][c];
+    cout << "Enter the " << r*c <<  " elements of the array: ";
+    for(int i = 0; i < r; i++)
+    {
+        for(int j = 0; j < c; j++)
+            cin >> arr[i][j];
+    }
+    int t, flag = 0;
+    cout << "Target: ";
+    cin >> t;
+    for(int i = 0; i < r; i++)
+    {
+        for(int j = 0; j < c; j++)
+        {
+            if (arr[i][j] == t)
+                flag = 1;
+        }
+    }
+    if (flag)
+        cout << "YES";
+    else
+        cout << "NO";
+    return 0;
+}
+
+2.
+
+#include <iostream>
+
+using namespace std;
+
+int main() {
+
+    int r,c;
+    cout << "Enter the size of the 2D array: ";
+    cin >> r >> c;
+    int arr[r][c];
+    cout << "Enter the " << r*c <<  " elements of the array: ";
+    for(int i = 0; i < r; i++)
+    {
+        for(int j = 0; j < c; j++)
+            cin >> arr[i][j];
+    }
+
+    int sum = 0;
+    for(int i = 0; i < r; i++)
+    {
+        for(int j = 0; j < c; j++)
+        {
+            sum += arr[i][j];
+        }
+    }
+    cout << "The sum of all values in the array: " << sum;
+    return 0;
+}
