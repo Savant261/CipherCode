@@ -1,0 +1,61 @@
+1.
+
+#include <iostream>
+using namespace std;
+
+
+int findmax(const int arr[], int size) {
+    int maxval = arr[0]; 
+    for (int i = 1; i < size; i++) {
+        if (arr[i] > maxval) {
+            maxval = arr[i];
+        }
+    }
+
+    return maxval;
+}
+
+int main(){
+    int arr1[] = {1, 5, 3, 9, 2};
+    cout << "Maximum value in arr1: " << findMax(arr1, 5) << endl;
+    return 0;
+}
+
+2.
+
+#include <iostream>
+#include <string>
+#include <cctype>
+
+using namespace std;
+
+bool Palindrome(const string &str) {
+    string Str = "";
+    for (int i = 0; i < str.size(); i++) {
+        if (isalnum(str[i])) {
+            Str += tolower(str[i]);
+        }
+    }
+    int left = 0;
+    int right = Str.size() - 1;
+
+    while (left < right) {
+        if (Str[left] != Str[right]) {
+            return false;
+        }
+        left++;
+        right--;
+    }
+    return true;
+}
+
+int main() {
+    string test1 = "A man, a plan, a canal, Panama";
+    cout << "\"" << test1 << "\" is a palindrome: ";
+    if(Palindrome)
+        cout << "True";
+    else
+        cout << "False";
+    return 0;
+}
+
