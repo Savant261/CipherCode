@@ -1,0 +1,56 @@
+1.
+
+#include <iostream>
+using namespace std;
+
+int main() {
+
+    int a = 5;
+    int *ptr = &a;
+    cout << "Value of a itself = " << a << endl;
+    cout << "Value of a by using pointer = " << *ptr;
+    return 0;
+}
+
+2.
+
+#include <iostream>
+using namespace std;
+
+int main() {
+
+    int arr[6]= {12,13,14,15,16};
+    cout << "The array is: ";
+    for(int i = 0; i < 5; i++)
+    {
+        cout << arr[i] << " ";
+    }
+    cout << endl;
+
+    cout << "Printing elements of array by pointer method: " << endl;
+    int *ptr = arr;
+    cout << "1st element: " << *ptr << endl;
+    cout << "2nd element: " << *(ptr+1) << endl;
+    cout << "3rd element: " << *(ptr+2) << endl;
+    cout << "4th element: " << *(ptr+3) << endl;
+    cout << "5th element: " << *(ptr+4) << endl;
+    return 0;
+
+}
+
+3.
+
+#include <iostream>
+using namespace std;
+
+int main() {
+
+    int a = 5;
+    int *ptr = &a;
+    int **ptr2 = &ptr;
+
+    cout << "Printing value of a by itself: " << a << endl;
+    cout << "Printing value of a by pointer: " << *ptr << endl;
+    cout << "Printing value of a by double pointer: " << **ptr2 << endl;
+    return 0;
+}
