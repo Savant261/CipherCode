@@ -1,0 +1,72 @@
+1. Finding length of string:
+
+#include <iostream>
+#include <string>
+
+using namespace std;
+
+int stringlen(string &str) {
+    int length = 0;
+    for (int i = 0; i < str.size(); i++) {
+        length++;
+    }
+    return length;
+}
+
+int main() {
+
+    string str;
+    cout << "str1 = ";
+    getline(cin, str);
+    cout << stringlen(str);
+    return 0;
+}
+
+2. Finding occurences 
+
+#include <iostream>
+#include <string>
+
+using namespace std;
+
+int findoccurence(string &str, char ch) {
+    int count = 0;
+    for (int i = 0; i < str.size(); i++) {
+        if(str[i] == ch)
+        {
+            count++;
+        }
+    }
+    return count;
+}
+
+int main() {
+
+    string str;
+    cout << "String = ";
+    getline(cin, str);
+    char ch;
+    cout << "character = ";
+    cin >> ch;
+    cout << findoccurence(str, ch);
+    return 0;
+}
+
+3. Concatenating strings
+
+#include <iostream>
+#include <string>
+
+using namespace std;
+
+int main() {
+
+    string str;
+    cout << "String1 = ";
+    getline(cin, str);
+    string str1;
+    cout << "String2 = ";
+    getline(cin, str1);
+    cout << str + str1;
+    return 0;
+}
